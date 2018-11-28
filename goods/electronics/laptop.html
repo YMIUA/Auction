@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notebook</title>
+    <link rel="stylesheet" href="./../../header_footer.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="/projekt/main.html">
+                <div class="logo_pic"></div>
+            </a>
+        </div>
+        <div class="search">
+            <div class="form">
+                <input id="searchValue" type="text" placeholder="Search">
+                <button type="submit"></button>
+            </div>
+        </div>
+        <div class="signin">
+            <button>Sign in</button>
+        </div>
+    </div>
+    <div id="search-result"></div>
+    <div class="main">
+        <div class="filter">
+            <div class="price">
+                <h4>Price:</h4>
+                <span>$</span>
+                <input name="price" id="min_price" type="number">
+                <span> - $</span>
+                <input name="price" id="max_price" type="number">
+            </div>
+            <div class="condition">
+                <h4>Condition:</h4>
+                <div class="condition_val">
+                    <input name="condition" id="All"  value="All" type="radio" checked>
+                    <label for="All">All</label>
+                </div>
+                <div class="condition_val">
+                    <input name="condition" id="New"  value="New" type="radio">
+                    <label for="New">New</label>
+                </div>
+                <div class="condition_val">
+                    <input name="condition" id="Used"  value="Used" type="radio">
+                    <label for="Used">Used</label>
+                </div>
+            </div>
+            <div class="end_time">
+                <h4>Time to end:</h4>
+                <div class="end_time_val">
+                    <input name="end_time" id="all_time"  value="all" type="radio" checked>
+                    <label for="all_time">All</label>
+                </div>
+                <div class="end_time_val">
+                    <input name="end_time" id="less_then3_day"  value="less_then3_day" type="radio">
+                    <label for="less_then3_day"><3 day</label>
+                </div>
+                <div class="end_time_val">
+                    <input name="end_time" id="more_then3_day"  value="more_then3_day" type="radio">
+                    <label for="more_then3_day">4-7 days</label>
+                </div>
+                <div class="end_time_val">
+                    <input name="end_time" id="more_day"  value="more_day" type="radio">
+                    <label for="more_day">7+ days</label>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <!--<div class="sort">-->
+                <!--<select name="view_sort_type">-->
+                    <!--<option selected value="name">Name</option>-->
+                    <!--<option  value="time_up">Time up</option>-->
+                    <!--<option value="time_down">Time down</option>-->
+                    <!--<option  value="price_up">Price up</option>-->
+                    <!--<option value="price_down">Price down</option>-->
+                <!--</select>-->
+            <!--</div>-->
+            <div id="goods">
+                <!--<div class="card">-->
+                    <!--<div class="pic"><img src="\projekt\pic\goods\AMBA1.jpg" alt="good"></div>-->
+                    <!--<div class="name"><h3>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, culpa.</h3></div>-->
+                    <!--<div class="timer">11.22.33</div>-->
+                    <!--<div class="price_now">$113</div>-->
+                    <!--<div><p></p></div>-->
+                <!--</div>-->
+            </div>
+            <div id="pages" >
+                <!--<button id="pages1" value="1">1</button>-->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="about_us">
+            <a href="#">About us</a>
+        </div>
+        <div class="contact_us">
+            <a href="/projekt/contact.html">Contact us</a>
+        </div>
+        <div class="made">
+            <p>made by YMI</p>
+        </div>
+    </footer>
+</body>
+<script src="/projekt/search.js"></script>
+<script src="/projekt/goods/electronics/laptop.js"></script>
+</html>

@@ -1,0 +1,99 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.main {
+  display: inline-block;
+  width: 100%;
+}
+.filter {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20%;
+  margin: 0px;
+  padding: 10px;
+  padding-left: 20px;
+  height: 500px;
+  background-color: #eeeeee;
+}
+.filter .condition .condition_val {
+  display: block;
+}
+.filter .price input {
+  width: 50px;
+}
+.filter .end_time {
+  display: block;
+}
+.content {
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 79%;
+  display: inline-block;
+  vertical-align: top;
+}
+.content .sort {
+  width: 95%;
+  height: 20px;
+}
+.content .sort select {
+  float: right;
+}
+.content #goods {
+  display: inline-block;
+  padding-top: 10px;
+}
+.content #goods .card {
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  width: 300px;
+}
+.content #goods .card .pic {
+  width: 85%;
+  margin: 35px auto;
+}
+.content #goods .card .pic img {
+  width: 95%;
+  height: 95%;
+}
+.content #goods .card .name {
+  color: #444;
+  width: 90%;
+  height: 100%;
+  padding: 5px;
+}
+.content #goods .card .name a {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+}
+.content #goods .card p {
+  padding: 0 10px;
+  overflow: hidden;
+  width: 90%;
+}
+.content #goods .card .timer {
+  color: firebrick;
+  float: right;
+  padding-right: 10px;
+}
+.content #goods .card .price_now {
+  float: left;
+  padding-left: 10px;
+}
+.content #pages {
+  margin: 10px auto;
+  width: 100px;
+}
+.content #pages button {
+  margin: 0 2px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+/*# sourceMappingURL=style.css.map */

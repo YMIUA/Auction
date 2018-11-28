@@ -1,0 +1,45 @@
+@gray:#999;
+@whiteGray:#bbb;
+@dark:#231f20;
+body{
+  font-family:"PT Serif", "PT Sanse", Arial;
+  padding: 0px;
+  margin: 0px;
+}
+.work{
+  width: 25vw;
+  vertical-align:top;
+  padding: 50px 30px;
+  display: inline-block;
+  .address{
+    margin-top: 30px;
+  }
+}
+.map{
+  padding: 20px;
+  display: inline-block;
+  width: 65vw;
+  height: 45vw;
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1048px){
+  .work{
+    width: 100%;
+    vertical-align:top;
+    padding: 50px 30px;
+    display: inline-block;
+  }
+  .map{
+    padding: 20px;
+    display: inline-block;
+    width: 95vw;
+    height: 95vw;
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

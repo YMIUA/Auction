@@ -1,0 +1,140 @@
+.header {
+  height: 80px;
+  width: 100%;
+  padding: 0px;
+  background: #231f20;
+  display: inline-block;
+}
+.header .logo {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 65px;
+  width: 20vw;
+  margin: 5px;
+  padding-left: 20px;
+}
+.header .logo a .logo_pic {
+  background: url(pic/logo.svg) no-repeat #231f20;
+  background-size: 48px;
+  height: 70%;
+  margin: 10px;
+}
+.header .search {
+  display: inline-block;
+  margin: 0;
+  padding: 0px;
+  width: 60vw;
+  height: 100%;
+  position: relative;
+  bottom: 35px;
+}
+.header .search .form {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.header .search .form input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #555555;
+  border-radius: 5px;
+  outline: none;
+  background: #dddddd;
+  color: #231f20;
+}
+.header .search .form button {
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.header .search .form button:before {
+  content: url("./pic/fontawersome/search.svg");
+  font-size: 16px;
+  color: #F9F0DA;
+}
+.header .signin {
+  width: 10vw;
+  float: right;
+  margin-right: 5%;
+  display: inline-block;
+}
+.header .signin button {
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #dddddd;
+  border-radius: 5px;
+  border: 0 solid #000;
+  height: 40px;
+  width: 80%;
+  float: left;
+  margin: 20px;
+  padding: auto;
+}
+#search-result {
+  position: absolute;
+  display: none;
+  top: 60px;
+  margin: 0;
+  background-color: #bbb;
+  width: 60vw;
+  left: 21%;
+  border: 2px solid #555555;
+  border-radius: 3px;
+  z-index: 10;
+}
+#search-result .search-result {
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+}
+#search-result .search-result a {
+  text-decoration: none;
+  color: black;
+}
+#search-result .search-result:last-child {
+  border-bottom: 0px solid black;
+}
+#search-result .search-result:before {
+  color: #333;
+  font-size: 16px;
+}
+#search-result .search-goods:before {
+  content: "goods: ";
+}
+#search-result .search-category:before {
+  content: "category: ";
+}
+footer {
+  height: 40px;
+  background-color: #231f20;
+}
+footer .contact_us,
+footer .about_us {
+  margin: 7px;
+  float: left;
+  margin-left: 50px;
+}
+footer .contact_us a,
+footer .about_us a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 20px;
+  height: 26px;
+}
+footer .made {
+  color: #bbb;
+  float: right;
+  margin-right: 20px;
+}
+/*# sourceMappingURL=header_footer.css.map */

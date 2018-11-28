@@ -1,0 +1,405 @@
+{"goods":[
+   {
+     "id":"117",
+     "name":"Apple MacBook Air №117",
+     "url":"/projekt/goods/electronics/notebook/main.html", 
+     "category":"notebook",
+     "endTime": "2018-12-18T11:20:16.123Z",
+     "addTime": "2018-12-01T09:07:43.123Z",
+     "description": "Ea deserunt et sint quis voluptate minim aliquip sit nisi est sunt amet labore ipsum. Lorem nostrud nostrud non in veniam proident culpa aliqua mollit ut. Proident laborum cillum cupidatat fugiat adipisicing ad dolor velit culpa ullamco pariatur. Nostrud fugiat irure enim laboris consectetur.\r\n",
+     "used": true,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+     "history": [
+      {
+        "name": "Thornton Becker",
+        "price": 374,
+        "data": "2018-12-02T09:51:00.123Z"
+      },
+      {
+        "name": "Rachael Carrillo",
+        "price": 945,
+        "data": "2018-12-03T09:18:21.123Z"
+      }
+     ],
+     "view":"17"
+   },
+   {
+     "id":"118",
+     "name":"Apple MacBook Air №118",
+     "url":"/projekt/goods/electronics/notebook/main.html", 
+     "category":"notebook",
+     "endTime": "2018-12-22T06:31:31.123Z",
+    "addTime": "2018-11-24T12:13:49.123Z",
+    "description": "Quis officia adipisicing aliquip aute velit deserunt aliquip excepteur exercitation do. In amet proident laboris proident id elit exercitation aute eiusmod proident. Laborum ullamco fugiat excepteur pariatur laborum pariatur magna nisi consequat ipsum in culpa. Minim incididunt irure est cillum commodo occaecat veniam. Ex esse reprehenderit sint est fugiat enim ullamco proident officia consectetur elit anim duis. Adipisicing in laboris commodo aute veniam sint. Ex ipsum Lorem fugiat laborum consequat in tempor consectetur veniam nisi.\r\n",
+    "used": false,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone:""380987654321",
+      "history": [
+      {
+        "name": "Tammie Todd",
+        "price": 413,
+        "data": "2018-11-30T08:39:54.123Z"
+      },
+      {
+        "name": "Karina Rush",
+        "price": 653,
+        "data": "2018-12-03T07:39:43.123Z"
+      }
+     ],
+     "view":"10"
+   },
+   {
+     "id":"119",
+     "name":"Apple MacBook Air №119",
+     "url":"/projekt/goods/electronics/notebook/main.html", 
+     "category":"notebook",
+     "endTime": "2018-12-26T08:22:03.123Z",
+    "addTime": "2018-11-27T07:55:15.123Z",
+    "description": "Nisi eiusmod esse incididunt cupidatat nisi sunt. Aliqua elit nulla occaecat dolore occaecat non officia cupidatat proident et consectetur amet. Enim officia duis minim culpa amet do. Ullamco adipisicing velit Lorem amet amet do veniam incididunt ipsum enim exercitation sunt. Fugiat esse est elit cillum esse sit Lorem dolor laborum fugiat irure cillum anim. Cillum est eiusmod duis duis.\r\n",
+    "used": true,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+      "history": [
+      {
+        "name": "Noel Rivas",
+        "price": 901,
+        "data": "2018-11-30T04:54:07.123Z"
+      },
+      {
+        "name": "Sexton Hodge",
+        "price": 939,
+        "data": "2018-11-30T04:54:22.123Z"
+      },
+      {
+        "name": "Lessie Frederick",
+        "price": 963,
+        "data": "2018-12-01T03:08:48.123Z"
+      }
+     ],
+     "view":"10"
+   },
+   {
+     "id":"120",
+     "name":"Apple MacBook Air №120",
+     "url":"/projekt/goods/electronics/notebook/main.html", 
+     "category":"notebook",
+     "endTime": "2018-12-19T09:21:14.123Z",
+    "addTime": "2018-12-01T05:54:39.123Z",
+    "description": "Ipsum aliqua dolore aute velit nisi minim mollit occaecat sint minim in dolore. Incididunt mollit culpa consequat commodo voluptate qui in id culpa excepteur in et dolore reprehenderit. Consequat est cupidatat ut nostrud. Eu excepteur consequat do reprehenderit nulla labore fugiat adipisicing mollit.\r\n",
+    "used": true,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+     "history": [
+      {
+        "name": "Forbes Carson",
+        "price": 811,
+        "data": "2018-12-03T09:12:33.123Z"
+      },
+      {
+        "name": "Deborah George",
+        "price": 867,
+        "data": "2018-12-02T03:25:46.123Z"
+      }
+     ],
+     "view":"20"
+   },
+   {
+     "id":"121",
+     "name":"Apple MacBook Air №121",
+     "url":"/projekt/goods/electronics/notebook/main.html", 
+     "endTime": "2018-12-21T01:35:59.123Z",
+    "addTime": "2018-11-23T01:11:32.123Z",
+    "description": "Ipsum tempor qui eiusmod veniam commodo laborum nisi dolor aliquip cupidatat. Nostrud irure aute qui ullamco eu est elit culpa anim. Dolore ut elit minim incididunt ex veniam esse in. Ut consectetur qui qui id laboris. Amet velit laboris commodo mollit nulla veniam magna deserunt. Pariatur non amet esse qui non ea laborum cillum sint ullamco officia non sunt cillum. Laboris consectetur mollit et ad aliquip aliquip.\r\n",
+    "used": false,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+     "history": [
+      {
+        "name": "Judy Fischer",
+        "price": 283,
+        "data": "2018-12-01T08:24:45.123Z"
+      },
+      {
+        "name": "Dena Cochran",
+        "price": 368,
+        "data": "2018-12-04T05:59:58.123Z"
+      },
+      {
+        "name": "Roslyn Valenzuela",
+        "price": 798,
+        "data": "2018-12-04T12:41:24.123Z"
+      }
+     ],
+     "view":"14"
+   },
+   {
+     "id":"122",
+     "name":"Apple MacBook Air №122",
+     "url":"/projekt/goods/electronics/notebook/main.html", 
+     "category":"notebook",
+     "endTime": "2018-12-28T06:42:55.123Z",
+    "addTime": "2018-11-19T07:06:41.123Z",
+    "description": "Laborum aliquip quis esse enim. Labore cupidatat ea in proident culpa magna ad commodo exercitation. Eiusmod eiusmod exercitation irure enim dolor laboris cupidatat.\r\n",
+    "used": true,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+     "history": [
+      {
+        "name": "Colette Patel",
+        "price": 553,
+        "data": "2018-11-30T04:43:18.123Z"
+      },
+      {
+        "name": "Olive Molina",
+        "price": 703,
+        "data": "2018-12-01T11:24:33.123Z"
+      },
+      {
+        "name": "Beverley Mccall",
+        "price": 851,
+        "data": "2018-12-04T01:15:30.123Z"
+      }
+     ],
+     "view":"10"
+   },
+   {
+     "id":"123",
+     "name":"Apple MacBook Air №123",
+     "url":"/projekt/goods/electronics/notebook/main.html", 
+     "category":"notebook",
+     "endTime": "2018-12-22T06:16:36.123Z",
+    "addTime": "2018-12-01T10:23:19.123Z",
+    "description": "Do est aute anim dolor mollit proident incididunt minim ad. Sit non ad sint laboris ullamco dolor in nisi quis. Sit et consequat duis do sit ipsum et nostrud aute dolore exercitation irure ipsum. Excepteur ullamco magna consequat consequat eu sunt cillum ullamco ullamco non do consectetur non laboris.\r\n",
+    "used": false,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+    "history": [
+      {
+        "name": "Ada Flowers",
+        "price": 757,
+        "data": "2018-12-02T01:24:59.123Z"
+      },
+      {
+        "name": "Angelique Guerrero",
+        "price": 859,
+        "data": "2018-12-03T05:00:13.123Z"
+      }
+     ],
+     "view":"10"
+   },
+   {
+     "id":"124",
+     "name":"Apple MacBook Air №124",
+     "url":"/projekt/goods/electronics/notebook/main.html",
+    "endTime": "2018-12-26T10:30:26.123Z",
+    "addTime": "2018-11-20T09:22:52.123Z",
+    "description": "Anim ullamco cillum veniam adipisicing occaecat elit exercitation. Et nulla ea nulla sint pariatur dolore. Laborum officia nostrud ea laborum eiusmod aliquip reprehenderit eiusmod id ut laboris nostrud id.\r\n",
+    "used": true,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "category":"notebook",
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+     "history": [
+      {
+        "name": "Meagan Mcdonald",
+        "price": 454,
+        "data": "2018-11-30T01:24:58.123Z"
+      },
+      {
+        "name": "Mccarty Jefferson",
+        "price": 493,
+        "data": "2018-12-01T06:21:58.123Z"
+      },
+      {
+        "name": "Savannah Knowles",
+        "price": 861,
+        "data": "2018-12-04T10:01:39.123Z"
+      }
+     ],
+     "view":"10"
+   },
+   {
+     "id":"125",
+     "name":"Apple MacBook Air №125",
+     "url":"/projekt/goods/electronics/notebook/main.html",
+     "endTime": "2018-12-27T04:11:41.123Z",
+    "addTime": "2018-11-17T12:49:17.123Z",
+    "description": "Ea reprehenderit nisi consectetur aliqua adipisicing deserunt. Eu excepteur dolor sit cupidatat pariatur. Labore dolore pariatur veniam commodo proident esse cupidatat ullamco aute amet aliqua id. Pariatur irure quis do enim voluptate mollit eiusmod non fugiat. Sit nulla pariatur fugiat nulla. Aute amet et anim laboris magna id aute adipisicing exercitation ex nulla mollit elit occaecat.\r\n",
+    "used": true,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "category":"notebook",
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+      "history": [
+      {
+        "name": "Britt Lucas",
+        "price": 500,
+        "data": "2018-12-02T05:50:37.123Z"
+      }
+     ],
+     "view":"10"
+   },
+   {
+     "id":"126",
+     "name":"Apple MacBook Air №126",
+     "url":"/projekt/goods/electronics/notebook/main.html",
+     "endTime": "2018-12-29T11:59:51.123Z",
+    "addTime": "2018-12-01T11:16:07.123Z",
+    "description": "Ut adipisicing commodo sunt adipisicing irure Lorem dolor id laborum proident mollit pariatur. Dolore esse nostrud eiusmod qui esse velit ex officia aute. Ad ad anim Lorem ut fugiat mollit qui. Ex ea deserunt culpa proident duis tempor sit do consequat eiusmod tempor qui. Ea consectetur id ex nulla adipisicing consequat laboris culpa et do labore minim in.\r\n",
+    "used": true,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "category":"notebook",
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+      "history": [
+      {
+        "name": "Tessa Burks",
+        "price": 396,
+        "data": "2018-12-02T03:16:45.123Z"
+      },
+      {
+        "name": "Flowers Macias",
+        "price": 863,
+        "data": "2018-12-03T08:11:39.123Z"
+      }
+      ],
+     "view":"10"
+   },
+   {
+     "id":"127",
+     "name":"Apple MacBook Air №127",
+     "url":"/projekt/goods/electronics/notebook/main.html",
+      "endTime": "2018-12-20T06:28:36.123Z",
+    "addTime": "2018-11-14T08:32:14.123Z",
+    "description": "Nulla voluptate eiusmod est laborum deserunt eiusmod proident irure id voluptate qui laborum. Sit nostrud incididunt Lorem cupidatat enim. Et velit proident velit excepteur labore velit qui. Do enim veniam sunt non esse laboris incididunt incididunt voluptate cillum. Aute incididunt aliqua non proident nulla. Incididunt mollit enim qui esse aliquip culpa non culpa ullamco dolore labore. Ea nisi nostrud est commodo.\r\n",
+    "used": false,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "category":"notebook",
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+      "history": [
+      {
+        "name": "Curtis Caldwell",
+        "price": 403,
+        "data": "2018-11-30T01:56:04.123Z"
+      },
+      {
+        "name": "Rodgers Byers",
+        "price": 536,
+        "data": "2018-12-01T06:51:34.123Z"
+      },
+      {
+        "name": "Prince Levy",
+        "price": 916,
+        "data": "2018-12-02T11:44:29.123Z"
+      }
+    ],
+     "view":"13"
+   },
+   {
+     "id":"128",
+     "name":"Apple MacBook Air №128",
+     "url":"/projekt/goods/electronics/notebook/main.html",
+     "endTime": "2018-12-10T10:19:13.123Z",
+    "addTime": "2018-11-19T05:16:13.123Z",
+    "description": "Cillum amet velit sit ullamco irure in magna sint sint mollit eu in nulla. Laboris do quis quis aliqua consequat cillum ipsum eu. Dolore fugiat incididunt consectetur voluptate incididunt amet pariatur anim ut dolore et. Amet veniam laboris pariatur consectetur elit nostrud.\r\n",
+    "used": false,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "category":"notebook",
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+     "history": [
+      {
+        "name": "Harper Warren",
+        "price": 300,
+        "data": "2018-12-01T02:20:55.123Z"
+      },
+      {
+        "name": "Pierce Avila",
+        "price": 687,
+        "data": "2018-12-04T11:07:42.123Z"
+      }
+    ],
+     "view":"10"
+   },
+   {
+     "id":"129",
+     "name":"Apple MacBook Air №129",
+     "url":"/projekt/goods/electronics/notebook/main.html",
+    "endTime": "2018-12-08T11:38:15.123Z",
+    "addTime": "2018-11-09T12:15:53.123Z",
+    "description": "Deserunt eu ut culpa nostrud eu labore excepteur non ut et sit non. Est amet ad laboris pariatur labore consequat reprehenderit quis commodo. Consequat aute sit minim anim eu aliqua culpa aliqua ipsum pariatur dolor id nostrud. Sint mollit velit reprehenderit fugiat ad ea ex commodo veniam nisi nostrud officia. Cillum sunt consectetur aute commodo proident reprehenderit quis mollit. Lorem minim aute consectetur non.\r\n",
+    "used": false,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "category":"notebook",
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+     "history": [
+      {
+        "name": "Jacklyn Holt",
+        "price": 731,
+        "data": "2018-12-01T05:32:50.123Z"
+      }
+     ],
+     "view":"10"
+   },
+   {
+     "id":"130",
+     "name":"Apple MacBook Air №130",
+     "url":"/projekt/goods/electronics/notebook/main.html",
+     "endTime": "2018-12-16T07:41:33.123Z",
+    "addTime": "2018-11-25T04:56:09.123Z",
+    "description": "Elit laborum irure culpa reprehenderit et tempor exercitation nostrud. Quis quis in magna ad deserunt magna. Esse eiusmod qui adipisicing officia non.\r\n",
+    "used": false,
+     "pic":["\\projekt\\pic\\goods\\AMBA1.jpg","\\projekt\\pic\\goods\\AMBA2.jpg","\\projekt\\pic\\goods\\AMBA3.jpg","\\projekt\\pic\\goods\\AMBA4.jpg"],
+     "category":"notebook",
+     "seller":"Iven",
+     "sellerStore":"#",
+     "phone":"380987654321",
+    "history": [
+      {
+        "name": "Charlene Logan",
+        "price": 390,
+        "data": "2018-12-02T08:28:43.123Z"
+      },
+      {
+        "name": "Laura Washington",
+        "price": 847,
+        "data": "2018-12-03T06:25:17.123Z"
+      }
+     ],
+     "view":"10"
+   }
+ ],
+  "category":[
+    {
+      "categoryName":"notebook",
+      "url":"#"
+    },
+    {
+      "categoryName":"phone",
+      "url":"#"
+    }
+  ]
+}
