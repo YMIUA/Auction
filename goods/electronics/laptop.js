@@ -1,5 +1,5 @@
 window.onload=function() {
-    XHR("/projekt/data.json", function (data) {
+    XHR("/data.json", function (data) {
         addContent(JSON.parse(data));
     });
 };
@@ -31,14 +31,13 @@ document.getElementById("more_then3_day").onclick = function () {
 document.getElementById("more_day").onclick = function () {
     filter();
 };
-
 function filter(){
     var minPrice = document.getElementById("min_price").value||0;
     var maxPrice = document.getElementById("max_price").value||10000000;
     var condition= document.querySelector('input[name="condition"]:checked').value;
-    var time     = document.querySelector('input[name="end_time"]:checked').value
+    var time     = document.querySelector('input[name="end_time"]:checked').value;
     console.log(time);
-    XHR("/projekt/data.json", function (data) {
+    XHR("/data.json", function (data) {
         var parsedData = JSON.parse(data);
         var sortDate = parsedData.goods.filter(function (item) {
             return (item.history[item.history.length - 1].price > minPrice)&&(item.history[item.history.length - 1].price < maxPrice);
@@ -102,7 +101,6 @@ function addPageButton(n){
 
 function showCarts(db){
     var res="";
-    console.log(db);
     for(var i=0;i<db.length;i++){
         res+=craateCarts(db[i]);
     }

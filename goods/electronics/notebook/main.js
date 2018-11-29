@@ -1,5 +1,5 @@
 window.onload=function() {
-    XHR("/projekt/data.json", function (data) {
+    XHR("/data.json", function (data) {
         var idItem = window.location.hash.slice(3);//slice "#id"
         var db = JSON.parse(data);
         for (var i = 0; i < db.goods.length; i++) {
@@ -80,7 +80,7 @@ function addItemDesctription(item){
         "<h3>"+item.name+"</h3>" +
         "<h4>Description:</h4>" +
         "<p>"+item.description+"</p>" +
-        "<div class=\"slider\"><img src=\"/projekt/pic/goods/AMBA3.jpg\" alt=\"pic1\"></div>" +
+        "<div class=\"slider\"><img src=\"/pic/goods/AMBA3.jpg\" alt=\"pic1\"></div>" +
         "</div>";
     console.log(item);
     document.getElementById("content").innerHTML=res;

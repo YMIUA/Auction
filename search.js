@@ -3,7 +3,7 @@
     var searchInput = document.getElementById("searchValue");
     searchInput.oninput = function () {
         if(searchInput.value.length>2){
-            XHR("/projekt/data.json", function (data) {
+            XHR("/data.json", function (data) {
                 var s=search(searchInput.value, JSON.parse(data));
                 if(s.goods.length!==0||s.typeOfGoods.length!==0){
                     document.getElementById("search-result").style.display = 'block';
@@ -22,7 +22,6 @@
 
 function showSearchResults(searchResults){
     var res="";
-    console.log(searchResults);
     for(var i=0;i<searchResults.typeOfGoods.length;i++){
         res+='<div class="search-category search-result"><a href="'+searchResults.typeOfGoods[i].link+'">'+searchResults.typeOfGoods[i].name+'<a></div>'
     }
