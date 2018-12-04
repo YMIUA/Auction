@@ -1,0 +1,37 @@
+@dark:#231f20;
+@whiteGray:#bbb;
+
+html:after{
+  padding: 0;
+  margin: 0;
+}
+
+footer{
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  background-color: @dark;
+  .contact_us,
+  .about_us{
+    display: inline-block;
+    margin: 7px;
+    width: 100px;
+    margin-left: 50px;
+    a{
+      text-decoration: none;
+      color: @whiteGray;
+      font-size: 20px;
+      height: 26px;
+    }
+  }
+  .made{
+    display: inline-block;
+    color: @whiteGray;
+    float: right;
+    padding-right: 20px;
+    p{
+      padding: 10px;
+      margin: 0px;
+    }
+  }
+}

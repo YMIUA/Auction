@@ -10,11 +10,14 @@ body {
 .filter {
   box-sizing: border-box;
   display: inline-block;
-  width: 20%;
-  margin: 0px;
+  position: sticky;
+  top: 0;
+  height: 100%;
+  float: left;
+  width: 200px;
+  margin: 0;
   padding: 10px;
   padding-left: 20px;
-  height: 500px;
   background-color: #eeeeee;
 }
 .filter .condition .condition_val {
@@ -29,7 +32,6 @@ body {
 .content {
   margin-top: 20px;
   box-sizing: border-box;
-  width: 79%;
   display: inline-block;
   vertical-align: top;
 }
@@ -63,7 +65,7 @@ body {
   color: #444;
   width: 90%;
   height: 100%;
-  padding: 5px;
+  padding: 10px;
 }
 .content #goods .card .name a {
   padding: 0px;
@@ -85,6 +87,12 @@ body {
 .content #goods .card .price_now {
   float: left;
   padding-left: 10px;
+}
+.content #goods .card .description_item {
+  margin: 0px 10px ;
+  height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .content #pages {
   margin: 10px auto;

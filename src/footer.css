@@ -1,0 +1,35 @@
+html:after {
+  padding: 0;
+  margin: 0;
+}
+footer {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  background-color: #231f20;
+}
+footer .contact_us,
+footer .about_us {
+  display: inline-block;
+  margin: 7px;
+  width: 100px;
+  margin-left: 50px;
+}
+footer .contact_us a,
+footer .about_us a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 20px;
+  height: 26px;
+}
+footer .made {
+  display: inline-block;
+  color: #bbb;
+  float: right;
+  padding-right: 20px;
+}
+footer .made p {
+  padding: 10px;
+  margin: 0px;
+}
+/*# sourceMappingURL=footer.css.map */

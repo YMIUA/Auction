@@ -1,5 +1,5 @@
 window.onload=function() {
-    XHR("/data.json", function (data) {
+    XHR("/src/data.json", function (data) {
         var idItem = window.location.hash.slice(3);//slice "#id"
         var db = JSON.parse(data);
         for (var i = 0; i < db.goods.length; i++) {
@@ -15,7 +15,7 @@ function addItemDesctription(item){
     var timeToEnd=differenceDate(Date.parse(item.endTime),new Date);
     var time=timeToEnd.day+"d"+timeToEnd.hours+"m"+timeToEnd.minutes+"m";
     var res="<div class=\"pic\">" +
-        "<img src=\""+item.pic[1]+"\" alt=\""+item.name+"\">" +
+        "<img src=\""+item.pic[2]+"\" alt=\""+item.name+"\">" +
         "</div>" +
         "<div class=\"main_description\">" +
         "<h1 class=\"description\">"+item.name+"</h1>" +
@@ -80,7 +80,7 @@ function addItemDesctription(item){
         "<h3>"+item.name+"</h3>" +
         "<h4>Description:</h4>" +
         "<p>"+item.description+"</p>" +
-        "<div class=\"slider\"><img src=\"/pic/goods/AMBA3.jpg\" alt=\"pic1\"></div>" +
+        "<div class=\"slider\"><img src=\""+item.pic[0]+"\" alt=\"pic1\"></div>" +
         "</div>";
     console.log(item);
     document.getElementById("content").innerHTML=res;

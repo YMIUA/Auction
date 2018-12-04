@@ -1,45 +1,44 @@
 @dark:#231f20;
 @whiteGray:#bbb;
+
+
+
 .header{
   height: 80px;
   width: 100%;
   padding: 0px;
+  margin: 0px;
   background: @dark;
-  display:inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   .logo{
-    box-sizing: border-box;
-    display:inline-block;
-    height: 65px;
-    width: 20vw;
-    margin: 5px;
-    padding-left:20px;
+    width: 20%;
+    height: 80px;
     a{
+      display: inline;
+      margin: auto;
       .logo_pic{
-        background: url(pic/logo.svg) no-repeat @dark;
-        background-size:48px;
         height: 70%;
-        margin: 10px;
+        img{
+          height: 100%;
+          display: block;
+          margin: 10px auto;
+        }
       }
     }
   }
   .search {
-    display: inline-block;
-    margin: 0;
-    padding: 0px;
-    width: 60vw;
-    height: 100%;
-    position: relative;
-    bottom: 35px;
+    width: 60%;
     .form {
-      box-sizing: border-box;
       position: relative;
       width: 100%;
-      margin: 0 auto;
-      margin-top: 10px;
+      align-items: center;
       input {
-        width: 100%;
-        height: 42px;
+        box-sizing: border-box;
         padding-left: 10px;
+        width: 100%;
+        height: 48px;
         border: 2px solid #555555;
         border-radius: 5px;
         outline: none;
@@ -49,7 +48,7 @@
       button {
         position: absolute;
         top: 3px;
-        right: 0px;
+        right: 2px;
         width: 42px;
         height: 42px;
         border: none;
@@ -64,34 +63,33 @@
     }
   }
   .signin {
-    width: 10vw;
-    float: right;
-    margin-right: 5%;
-    display:inline-block;
+    display: flex;
+    width: 20%;
     button{
-      cursor: pointer;
+      margin: 0 auto;
       text-transform: uppercase;
       background-color: #dddddd;
       border-radius: 5px;
       border:0 solid #000;
       height: 40px;
-      width: 80%;
-      float:left;
-      margin: 20px;
-      padding: auto;
+      width: 80px;
+    }
+    :hover{
+      cursor: pointer;
+      background-color: #eeeeee;
     }
   }
 }
 #search-result{
   position: absolute;
   display: none;
-  top:60px;
   margin: 0;
   background-color:@whiteGray;
-  width: 60vw;
-  left: 21%;
   border:2px solid #555555;
+  border-top: 0px solid #555555;
   border-radius: 3px;
+  width: 60%;
+  box-sizing: border-box;
   z-index: 10;
   .search-result{
     border-bottom: 1px solid black;
@@ -113,30 +111,9 @@
     font-size: 16px;
   }
   .search-goods:before{
-    content: "goods: ";
+    content: "Item: ";
   }
   .search-category:before{
-    content: "category: ";
-  }
-}
-footer{
-  height: 40px;
-  background-color: @dark;
-  .contact_us,
-  .about_us{
-    margin: 7px;
-    float:left;
-    margin-left: 50px;
-    a{
-      text-decoration: none;
-      color: @whiteGray;
-      font-size: 20px;
-      height: 26px;
-    }
-  }
-  .made{
-    color: @whiteGray;
-    float:right;
-    margin-right: 20px;
+    content: "Category: ";
   }
 }

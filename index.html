@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Auction</title>
+	<link rel="stylesheet" href="/src/header.css">
+	<link rel="stylesheet" href="/src/footer.css">
+	<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<a href="/index.html">
+				<div class="logo_pic">
+					<img src="/src/pic/logo.svg" alt="logo">
+				</div>
+			</a>
+		</div>
+		<div class="search">
+			<div class="form">
+				<input id="searchValue" type="text" placeholder="Search">
+				<button type="submit"></button>
+			</div>
+			<div id="search-result"></div>
+		</div>
+		<div class="signin">
+			<button>Sign in</button>
+		</div>
+	</div>
+	<div class="mainMenu">
+		<ul class="menu">
+			<li><a href="#">Electronics</a>
+				<ul class="submenu">
+					<li><a href="/src/goods/electronics/laptop.html">Notebook</a></li>
+					<li><a href="#">Phone</a></li>
+					<li><a href="#">Tablet</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Fashion</a></li>
+			<li><a href="#">Sports</a></li>
+			<li><a href="#">Home & Garden</a></li>
+			<li><a href="#">Under $10</a></li>
+		</ul>
+	</div>
+	<div class="sale">
+		<img src="/src/pic/sale.jpg" alt="slider">
+	</div>
+	<div id="finish_item">
+		<div id="left" class="slider-button"></div>
+		<div class="slider-wrapper">
+			<div id="slider"></div>
+		</div>
+		<div id="right" class="slider-button"></div>
+	</div>
+	<footer>
+		<div class="about_us">
+			<a href="#">About us</a>
+		</div>
+		<div class="contact_us">
+			<a href="/src/contact.html">Contact us</a>
+		</div>
+		<div class="made">
+			<p>made by YMI</p>
+		</div>
+	</footer>
+</body>
+<script src="/src/search.js"></script>
+<script src="/index.js"></script>
+</html>
+

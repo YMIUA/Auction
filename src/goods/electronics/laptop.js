@@ -1,5 +1,5 @@
 window.onload=function() {
-    XHR("/data.json", function (data) {
+    XHR("/src/data.json", function (data) {
         addContent(JSON.parse(data));
     });
 };
@@ -31,13 +31,13 @@ document.getElementById("more_then3_day").onclick = function () {
 document.getElementById("more_day").onclick = function () {
     filter();
 };
+
 function filter(){
     var minPrice = document.getElementById("min_price").value||0;
     var maxPrice = document.getElementById("max_price").value||10000000;
     var condition= document.querySelector('input[name="condition"]:checked').value;
     var time     = document.querySelector('input[name="end_time"]:checked').value;
-    console.log(time);
-    XHR("/data.json", function (data) {
+    XHR("/src/data.json", function (data) {
         var parsedData = JSON.parse(data);
         var sortDate = parsedData.goods.filter(function (item) {
             return (item.history[item.history.length - 1].price > minPrice)&&(item.history[item.history.length - 1].price < maxPrice);
@@ -70,7 +70,7 @@ function filter(){
             addContent({goods: sortDate});
         }
         else{
-            document.getElementById("goods").innerHTML="<p>No mutch found</p>";
+            document.getElementById("goods").innerHTML="<p>No match found</p>";
             document.getElementById("pages").innerHTML="";
         }
     });
@@ -114,6 +114,8 @@ function craateCarts(goods){
     "    <div class=\"name\"><a href=\""+goods.url+"#id"+goods.id+"\" terget=\"_self\">"+goods.name+"</a></div> " +
     "    <div class=\"timer\">"+time.day+"d "+time.hours+"h "+time.minutes+"m"+"</div> " +
     "    <div class=\"price_now\">"+goods.history[goods.history.length-1].price+"$"+"</div> " +
+    "    <div><p></p></div> " +
+    "    <div class=\"description_item\">"+goods.description+"</div> " +
     "    <div><p></p></div> " +
     "</div>";
 }
