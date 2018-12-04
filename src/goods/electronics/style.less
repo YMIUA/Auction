@@ -4,21 +4,16 @@ body{
   margin: 0;
 }
 .main{
-  display: inline-block;
-  width: 100%;
+  display: flex;
 }
 .filter{
-  box-sizing: border-box;
-  display: inline-block;
   position: sticky;
   top: 0;
+  width: 20%;
   height: 100%;
-  float: left;
-  width: 200px;
-  margin: 0;
-  padding: 10px;
-  padding-left: 20px;
-  //height: 500px;
+  display: inline;
+  //padding: 10px;
+  padding-left: 2%;
   background-color: #eeeeee;
   .condition{
     .condition_val{
@@ -35,10 +30,11 @@ body{
   }
 }
 .content{
+  width: 80%;
   margin-top: 20px;
   box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
+  //display: inline-block;
+  //vertical-align: top;
   .sort{
     width: 95%;
     height: 20px;

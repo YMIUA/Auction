@@ -10,6 +10,13 @@ window.onload=function() {
     });
 };
 
+document.getElementById("prewiew-right").onclick=function () {
+    console.log("lol");
+    var position=parseInt(window.getComputedStyle(document.getElementById("prewiew-right")).getPropertyValue('right'));
+}
+
+
+
 function addItemDesctription(item){
     var isUsed=item.used?"Used":"New";
     var timeToEnd=differenceDate(Date.parse(item.endTime),new Date);
@@ -80,9 +87,34 @@ function addItemDesctription(item){
         "<h3>"+item.name+"</h3>" +
         "<h4>Description:</h4>" +
         "<p>"+item.description+"</p>" +
-        "<div class=\"slider\"><img src=\""+item.pic[0]+"\" alt=\"pic1\"></div>" +
-        "</div>";
-    console.log(item);
+        "</div>"/*+
+        "<div class=\"slider\">" +
+        "        <div class=\"main-slide\">" +
+        "            <button type=\"button\" id=\"main-left\">" +
+        "                <img src=\"/src/pic/fontawersome/arrow-left.svg\" alt=\"left\">" +
+        "            </button>" +
+        "            <button type=\"button\" id=\"main-right\">" +
+        "                <img src=\"/src/pic/fontawersome/arrow-right.svg\" alt=\"right\">" +
+        "            </button>" +
+        "        </div>" +
+        "        <div class=\"minislider\">" +
+        "            <div id=\"prewiew-left\" class=\"arrow\">" +
+        "                <img src=\"/src/pic/fontawersome/caret-left.svg\" alt=\"\">" +
+        "            </div>" +
+        "            <div id=\"slider-wrapper\">\n" +
+        "                <div id=\"all-pic\">\n" +
+        "                    <div class=\"slider-pic\" id=\"id1\" ><img src=\"https://pbs.twimg.com/profile_images/764080533395611648/vBXXzYUT_400x400.jpg\" alt=\"\"></div>\n" +
+        "                    <div class=\"slider-pic\" id=\"id2\" ><img src=\"https://pbs.twimg.com/profile_images/764080533395611648/vBXXzYUT_400x400.jpg\" alt=\"\"></div>\n" +
+        "                    <div class=\"slider-pic\" id=\"id3\" ><img src=\"https://pbs.twimg.com/profile_images/764080533395611648/vBXXzYUT_400x400.jpg\" alt=\"\"></div>\n" +
+        "                    <div class=\"slider-pic\" id=\"id4\" ><img src=\"https://pbs.twimg.com/profile_images/764080533395611648/vBXXzYUT_400x400.jpg\" alt=\"\"></div>\n" +
+        "                    <div class=\"slider-pic\" id=\"id5\" ><img src=\"https://pbs.twimg.com/profile_images/764080533395611648/vBXXzYUT_400x400.jpg\" alt=\"\"></div>\n" +
+        "                </div>\n" +
+        "            </div>\n" +
+        "            <div id=\"prewiew-right\" class=\"arrow\">\n" +
+        "                <img src=\"/src/pic/fontawersome/caret-right.svg\" alt=\"\">\n" +
+        "            </div>\n" +
+        "        </div>\n" +
+        "    </div>"*/
     document.getElementById("content").innerHTML=res;
 }
 

@@ -54,7 +54,7 @@
   cursor: pointer;
 }
 .header .search .form button:before {
-  content: url("./pic/fontawersome/search.svg");
+  content: url("/src/pic/fontawersome/search.svg");
   font-size: 16px;
   color: #F9F0DA;
 }
