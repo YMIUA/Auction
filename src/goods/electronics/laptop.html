@@ -34,10 +34,15 @@
         <div class="filter">
             <div class="price">
                 <h4>Price:</h4>
-                <span>$</span>
-                <input name="price" id="min_price" type="number">
-                <span> - $</span>
-                <input name="price" id="max_price" type="number">
+                <div>
+                    <span>$</span>
+                    <input name="price" id="min_price" type="number">
+                    <span>- </span>
+                </div>
+                <div>
+                    <span>$</span>
+                    <input name="price" id="max_price" type="number">
+                </div>
             </div>
             <div class="condition">
                 <h4>Condition:</h4>
@@ -75,15 +80,6 @@
             </div>
         </div>
         <div class="content">
-            <!--<div class="sort">-->
-                <!--<select name="view_sort_type">-->
-                    <!--<option selected value="name">Name</option>-->
-                    <!--<option  value="time_up">Time up</option>-->
-                    <!--<option value="time_down">Time down</option>-->
-                    <!--<option  value="price_up">Price up</option>-->
-                    <!--<option value="price_down">Price down</option>-->
-                <!--</select>-->
-            <!--</div>-->
             <div id="goods"></div>
             <div id="pages" ></div>
         </div>

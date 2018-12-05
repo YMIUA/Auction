@@ -6,8 +6,8 @@ body{
   margin: 0px;
 }
 .pic{
-  display: inline-block;
-  width: 40vw;
+  //display: inline-block;
+  width: 40%;
   padding-bottom:-5px;
   margin: 20px;
   margin-top: 40px;
@@ -19,10 +19,15 @@ body{
     height: 100%;
   }
 }
+.main-content{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
 .main_description{
   display: inline-block;
   margin: 20px;
-  width: 50%;
+  width: 49%;
   >div{
     width: 90%;
   }
@@ -75,68 +80,89 @@ body{
   width: 40%;
 }
 .full_description{
-  padding: 20px 40px;
-  width: 90%;
-  margin:auto;
+  padding: 0px;
+  width: 100%;
+  margin: 10px 0;
+  h3,
+  h4,
+  p{
+    padding: 10px 40px ;
+    margin: auto;
+  }
 }
 .slider{
+ // background-color: #f0f0f0;
   margin: 0 auto;
   width: 40%;
+  padding-bottom: 10px;
+  //border: 1px solid @gray;
+  border-radius: 5px;
   .main-slide {
-    background: url("https://pbs.twimg.com/profile_images/764080533395611648/vBXXzYUT_400x400.jpg");
+    padding: 0;
     background-size: 100%;
+    box-sizing: border-box;
     width: 40vw;
     height: 40vw;
-    > img {
-      height: 100%;
-      width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    //border:1px solid #eee;
+    //border-radius:5px;
+    > #main-pic {
+      width:85%;
+      >img{
+        width: 100%;
+      }
     }
     button {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(200, 200, 200, 0.0);
       border: none;
       cursor: pointer;
-      width: 40px;
-      height: 40px;
+      width: 8%;
       font-size: 16px;
-      position: relative;
-      top: 48%;
       border-radius: 50%;
-      padding: 5px;
+      padding: 2px;
       img{
         position: relative;
         bottom: 2px;
       }
     }
     #main-left {
-      left: 1% ;
+      left: 0px ;
     }
     #main-right {
-      left: 84%;
+      left: 0px;
     }
   }
   .minislider{
-    margin-top:10px;
     display: flex;
     justify-content: center;
+    align-items:center;
     #slider-wrapper {
       width: 80%;
       box-sizing: border-box;
       margin: auto;
       overflow: hidden;
       #all-pic {
-        display: block;
-        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        display: flex;
+        align-items:center;
+        width: 100000px;
         height: 10vw;
         overflow: hidden;
         cursor: pointer;
         position: relative;
-        right: 0px;
+        right: 0;
         .slider-pic {
           width: 10vw;
-          height: 10vw;
+          //height: 10vw;
           margin: 0 5px;
+          padding: 0;
           display: inline-block;
           img {
+            margin: 0;
+            padding: 0;
             height: 100%;
             width: 100%;
           }
@@ -145,11 +171,12 @@ body{
     }
     .arrow{
       box-sizing: border-box;
+      background-color: transparent;
+      border:0px solid transparent;
       cursor:pointer;
-      position: relative;
-      display: inline;
-      width: 10%;
-      height: 0;
+      display: flex;
+      width: 6%;
+      align-items: center;
       img{
         width: 100%;
       }

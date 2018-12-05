@@ -1,27 +1,81 @@
+var thisItem;
 window.onload=function() {
     XHR("/src/data.json", function (data) {
         var idItem = window.location.hash.slice(3);//slice "#id"
         var db = JSON.parse(data);
         for (var i = 0; i < db.goods.length; i++) {
             if (db.goods[i].id === idItem) {
+                thisItem=db.goods[i];
+                var allPic = document.getElementsByClassName("slider-pic");
                 addItemDesctription(db.goods[i]);
+
+                document.getElementById("main-left").onclick = function () {
+                    var picIndex=getPictureIndex(thisItem);
+                    if(picIndex!==0) {
+                        changeMainSlide(thisItem,picIndex-1);
+                    }
+                };
+                document.getElementById("main-right").onclick = function () {
+                    var picIndex=getPictureIndex(thisItem);
+                    if(picIndex!==thisItem.pic.length-1) {
+                        changeMainSlide(thisItem,picIndex+1);
+                    }
+                };
+                document.getElementById("prewiew-left").onclick = function () {
+                    var position=getPosition();
+                    if(position>0){
+                        changeMinislide(position,-1);
+                    }
+                };
+                document.getElementById("prewiew-right").onclick = function () {
+                    var position=getPosition();
+                    var wiewSize=document.getElementById("slider-wrapper").offsetWidth;
+                    var picSize=(allPic.length-1)*(document.getElementsByClassName("slider-pic")[0].offsetWidth+10);
+                    if(picSize-wiewSize>=position) {
+                        changeMinislide(position,1);
+                    }
+                };
+                for (var j = 0; j < allPic.length; j++) {//add event listener to all pic in minislider
+                    allPic[j].addEventListener('click', changeSlide, false);
+                }
             }
         }
     });
 };
 
-document.getElementById("prewiew-right").onclick=function () {
-    console.log("lol");
-    var position=parseInt(window.getComputedStyle(document.getElementById("prewiew-right")).getPropertyValue('right'));
+function changeMinislide(position,n){
+    document.getElementById("all-pic").style.right=
+        position+n*document.getElementsByClassName("slider-pic")[0].offsetWidth+n*10+"px";
 }
 
+function getPosition() {
+    return parseInt(window.getComputedStyle(document.getElementById("all-pic"))
+        .getPropertyValue('right'));
+}
 
+function changeMainSlide(item,n) {
+    document.getElementById("main-pic-img").setAttribute('src', item.pic[n])
+}
+
+function getPictureIndex(item){
+    return item.pic.indexOf(document.getElementById("main-pic-img").getAttribute('src'))
+}
+
+function changeSlide() {
+    var id = this.getAttribute("id").slice(6);
+    document.getElementById("main-pic-img").setAttribute('src', thisItem.pic[id])
+};
 
 function addItemDesctription(item){
     var isUsed=item.used?"Used":"New";
     var timeToEnd=differenceDate(Date.parse(item.endTime),new Date);
     var time=timeToEnd.day+"d"+timeToEnd.hours+"m"+timeToEnd.minutes+"m";
-    var res="<div class=\"pic\">" +
+    var sliderPic="";
+    for (var i=0;i<item.pic.length;i++){
+        sliderPic+="<div class=\"slider-pic\" id=\"pic-id"+ i+"\" ><img src=\""+item.pic[i]+"\" alt=\"\"></div>\n"
+    }
+    var res="<div class=\"main-content\">"+
+        "<div class=\"pic\">" +
         "<img src=\""+item.pic[2]+"\" alt=\""+item.name+"\">" +
         "</div>" +
         "<div class=\"main_description\">" +
@@ -82,39 +136,37 @@ function addItemDesctription(item){
         "</div>" +
         "</div>" +
         "</div>" +
+        "</div>" +
         "<div class=\"line\"></div>" +
         "<div class=\"full_description\">" +
         "<h3>"+item.name+"</h3>" +
+        "<div class=\"slider\">" +
+        "<div class=\"main-slide\">" +
+        "<button type=\"button\" id=\"main-left\">" +
+        "<img src=\"/src/pic/fontawersome/arrow-left.svg\" alt=\"left\">" +
+        "</button>" +
+        "<div id=\"main-pic\"><img id=\"main-pic-img\" src=\""+item.pic[0]+"\" alt=\"\"></div>"+
+        "<button type=\"button\" id=\"main-right\">" +
+        "<img src=\"/src/pic/fontawersome/arrow-right.svg\" alt=\"right\">" +
+        "</button>" +
+        "</div>" +
+        "<div class=\"minislider\">" +
+        "<button type=\"button\" id=\"prewiew-left\" class=\"arrow\">" +
+        "<img src=\"/src/pic/fontawersome/caret-left.svg\" alt=\"\">" +
+        "</button>" +
+        "<div id=\"slider-wrapper\">" +
+        "<div id=\"all-pic\">" +
+        sliderPic+
+        "</div>" +
+        "</div>" +
+        "<button type=\"button\" id=\"prewiew-right\" class=\"arrow\">" +
+        "<img src=\"/src/pic/fontawersome/caret-right.svg\" alt=\"\">" +
+        "</button>" +
+        "</div>" +
+        "</div>"+
         "<h4>Description:</h4>" +
         "<p>"+item.description+"</p>" +
-        "</div>"/*+
-        "<div class=\"slider\">" +
-        "        <div class=\"main-slide\">" +
-        "            <button type=\"button\" id=\"main-left\">" +
-        "                <img src=\"/src/pic/fontawersome/arrow-left.svg\" alt=\"left\">" +
-        "            </button>" +
-        "            <button type=\"button\" id=\"main-right\">" +
-        "                <img src=\"/src/pic/fontawersome/arrow-right.svg\" alt=\"right\">" +
-        "            </button>" +
-        "        </div>" +
-        "        <div class=\"minislider\">" +
-        "            <div id=\"prewiew-left\" class=\"arrow\">" +
-        "                <img src=\"/src/pic/fontawersome/caret-left.svg\" alt=\"\">" +
-        "            </div>" +
-        "            <div id=\"slider-wrapper\">\n" +
-        "                <div id=\"all-pic\">\n" +
-        "                    <div class=\"slider-pic\" id=\"id1\" ><img src=\"https://pbs.twimg.com/profile_images/764080533395611648/vBXXzYUT_400x400.jpg\" alt=\"\"></div>\n" +
-        "                    <div class=\"slider-pic\" id=\"id2\" ><img src=\"https://pbs.twimg.com/profile_images/764080533395611648/vBXXzYUT_400x400.jpg\" alt=\"\"></div>\n" +
-        "                    <div class=\"slider-pic\" id=\"id3\" ><img src=\"https://pbs.twimg.com/profile_images/764080533395611648/vBXXzYUT_400x400.jpg\" alt=\"\"></div>\n" +
-        "                    <div class=\"slider-pic\" id=\"id4\" ><img src=\"https://pbs.twimg.com/profile_images/764080533395611648/vBXXzYUT_400x400.jpg\" alt=\"\"></div>\n" +
-        "                    <div class=\"slider-pic\" id=\"id5\" ><img src=\"https://pbs.twimg.com/profile_images/764080533395611648/vBXXzYUT_400x400.jpg\" alt=\"\"></div>\n" +
-        "                </div>\n" +
-        "            </div>\n" +
-        "            <div id=\"prewiew-right\" class=\"arrow\">\n" +
-        "                <img src=\"/src/pic/fontawersome/caret-right.svg\" alt=\"\">\n" +
-        "            </div>\n" +
-        "        </div>\n" +
-        "    </div>"*/
+        "</div>";
     document.getElementById("content").innerHTML=res;
 }
 

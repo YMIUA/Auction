@@ -12,7 +12,7 @@ body{
   width: 20%;
   height: 100%;
   display: inline;
-  //padding: 10px;
+  padding-bottom: 20px;
   padding-left: 2%;
   background-color: #eeeeee;
   .condition{
@@ -33,16 +33,6 @@ body{
   width: 80%;
   margin-top: 20px;
   box-sizing: border-box;
-  //display: inline-block;
-  //vertical-align: top;
-  .sort{
-    width: 95%;
-    height: 20px;
-    select{
-
-      float:right;
-    }
-  }
   #goods{
     display: inline-block;
     padding-top: 10px;
@@ -51,7 +41,7 @@ body{
       display: inline-block;
       border: 1px solid #aaaaaa;
       border-radius: 4px;
-      width: 300px;
+      width: 31%;
       .pic{
         width: 85%;
         margin: 35px auto;
@@ -94,7 +84,7 @@ body{
         text-overflow:ellipsis;
         p{
 
-          }
+        }
       }
     }
   }
@@ -107,5 +97,20 @@ body{
       width: 25px;
       height: 25px;
     }
+  }
+}
+@media (max-width: 760px){
+  .content #goods .card{
+    width: 90%;
+  }
+}
+@media (min-width: 760px) and (max-width: 1200px) {
+  .content #goods .card{
+        width: 45%;
+  }
+}
+@media (min-width: 1600px){
+  .content #goods .card{
+    width: 22%;
   }
 }
